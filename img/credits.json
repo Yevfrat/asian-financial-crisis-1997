@@ -1,0 +1,192 @@
+{
+ "tsang": {
+  "kind": "people",
+  "file": "img/people/tsang.jpg",
+  "title": "Donald_Tsang_WEF.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "World Economic Forum",
+  "page": "https://commons.wikimedia.org/wiki/File:Donald_Tsang_WEF.jpg",
+  "article": "Donald Tsang",
+  "bytes": 78037
+ },
+ "yam": {
+  "kind": "people",
+  "file": "img/people/yam.jpg",
+  "title": "Joseph_Yam_UBS.jpg",
+  "license": "CC BY 2.0",
+  "author": "UBS Group",
+  "page": "https://commons.wikimedia.org/wiki/File:Joseph_Yam_UBS.jpg",
+  "article": "Joseph Yam",
+  "bytes": 85904
+ },
+ "tung": {
+  "kind": "people",
+  "file": "img/people/tung.jpg",
+  "title": "Tung_Chee_Hwa_174-CD-L-05-10-04-B-001_(cropped).jpg",
+  "license": "Public domain",
+  "author": "Department of Labor. Office of Public Affairs. Division of Audiovisual Communications. ca. 1992-  (Most Recent)",
+  "page": "https://commons.wikimedia.org/wiki/File:Tung_Chee_Hwa_174-CD-L-05-10-04-B-001_(cropped).jpg",
+  "article": "Tung Chee-hwa",
+  "bytes": 73818
+ },
+ "chavalit": {
+  "kind": "people",
+  "file": "img/people/chavalit.jpg",
+  "title": "Chawalit_cropped.jpg",
+  "license": "CC BY 3.0",
+  "author": "Thairath Online",
+  "page": "https://commons.wikimedia.org/wiki/File:Chawalit_cropped.jpg",
+  "article": "Chavalit Yongchaiyudh",
+  "bytes": 55880
+ },
+ "thanong": {
+  "kind": "people",
+  "file": "img/people/thanong.jpg",
+  "title": "Thanong_Bidaya.jpg",
+  "license": "CC BY 3.0",
+  "author": "Thairath Online",
+  "page": "https://commons.wikimedia.org/wiki/File:Thanong_Bidaya.jpg",
+  "article": "Thanong Bidaya",
+  "bytes": 84294
+ },
+ "suharto": {
+  "kind": "people",
+  "file": "img/people/suharto.jpg",
+  "title": "Official_portrait_of_Soeharto_(1980s).jpg",
+  "license": "Public domain",
+  "author": "Government of Indonesia (uncredited)",
+  "page": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Soeharto_(1980s).jpg",
+  "article": "Suharto",
+  "bytes": 91299
+ },
+ "habibie": {
+  "kind": "people",
+  "file": "img/people/habibie.jpg",
+  "title": "B._J._Habibie,_President_of_Indonesia_portrait.jpg",
+  "license": "Public domain",
+  "author": "Office of the Vice PresidentThe Republic of Indonesia",
+  "page": "https://commons.wikimedia.org/wiki/File:B._J._Habibie,_President_of_Indonesia_portrait.jpg",
+  "article": "B. J. Habibie",
+  "bytes": 68571
+ },
+ "camdessus": {
+  "kind": "people",
+  "file": "img/people/camdessus.jpg",
+  "title": "Michel_Camdessus-IMG_3655.jpg",
+  "license": "CC BY-SA 2.0 fr",
+  "author": "Rama",
+  "page": "https://commons.wikimedia.org/wiki/File:Michel_Camdessus-IMG_3655.jpg",
+  "article": "Michel Camdessus",
+  "bytes": 57621
+ },
+ "ramos": {
+  "kind": "people",
+  "file": "img/people/ramos.jpg",
+  "title": "Fidel_Valdez_Ramos_Official_Photo_as_President_of_the_Philippines_(1995).jpg",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "page": "https://commons.wikimedia.org/wiki/File:Fidel_Valdez_Ramos_Official_Photo_as_President_of_the_Philippines_(1995).jpg",
+  "article": "Fidel V. Ramos",
+  "bytes": 171715
+ },
+ "estrada": {
+  "kind": "people",
+  "file": "img/people/estrada.jpg",
+  "title": "Joseph_Estrada_official_presidential_portrait.jpg",
+  "license": "Public domain",
+  "author": "Government of the Philippines",
+  "page": "https://commons.wikimedia.org/wiki/File:Joseph_Estrada_official_presidential_portrait.jpg",
+  "article": "Joseph Estrada",
+  "bytes": 62440
+ },
+ "kimdj": {
+  "kind": "people",
+  "file": "img/people/kimdj.jpg",
+  "title": "Kim_Dae-jung_presidential_portrait.jpg",
+  "license": "KOGL Type 1",
+  "author": "대한민국 국가기록원",
+  "page": "https://commons.wikimedia.org/wiki/File:Kim_Dae-jung_presidential_portrait.jpg",
+  "article": "Kim Dae-jung",
+  "bytes": 49005
+ },
+ "mahathir": {
+  "kind": "people",
+  "file": "img/people/mahathir.jpg",
+  "title": "Mahathir_Mohamad_13112018_(cropped).jpg",
+  "license": "CC BY 4.0",
+  "author": "kremlin.ru",
+  "page": "https://commons.wikimedia.org/wiki/File:Mahathir_Mohamad_13112018_(cropped).jpg",
+  "article": "Mahathir Mohamad",
+  "bytes": 112543
+ },
+ "anwar": {
+  "kind": "people",
+  "file": "img/people/anwar.jpg",
+  "title": "Anwar_Ibrahim_in_June_2026.jpg",
+  "license": "CC BY 4.0",
+  "author": "Cabinet Public Relations Office of the Cabinet Secretariat",
+  "page": "https://commons.wikimedia.org/wiki/File:Anwar_Ibrahim_in_June_2026.jpg",
+  "article": "Anwar Ibrahim",
+  "bytes": 52213
+ },
+ "thailand": {
+  "kind": "places",
+  "file": "img/places/thailand.jpg",
+  "title": "4Y1A1159_Bangkok_(33536795515).jpg",
+  "license": "CC BY 2.0",
+  "author": "Ninara from Helsinki, Finland",
+  "page": "https://commons.wikimedia.org/wiki/File:4Y1A1159_Bangkok_(33536795515).jpg",
+  "article": "Bangkok",
+  "bytes": 361927
+ },
+ "indonesia": {
+  "kind": "places",
+  "file": "img/places/indonesia.jpg",
+  "title": "Bundaran_Hotel_Indonesia_(2025)_(cropped).jpg",
+  "license": "CC BY 4.0",
+  "author": "Medelam",
+  "page": "https://commons.wikimedia.org/wiki/File:Bundaran_Hotel_Indonesia_(2025)_(cropped).jpg",
+  "article": "Jakarta",
+  "bytes": 382091
+ },
+ "philippines": {
+  "kind": "places",
+  "file": "img/places/philippines.jpg",
+  "title": "Cityscape_of_Manila,_2025_(01).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Bahnfrend",
+  "page": "https://commons.wikimedia.org/wiki/File:Cityscape_of_Manila,_2025_(01).jpg",
+  "article": "Manila",
+  "bytes": 306997
+ },
+ "malaysia": {
+  "kind": "places",
+  "file": "img/places/malaysia.jpg",
+  "title": "Bukit_Bintang_junction_in_2024_2.jpg",
+  "license": "CC0",
+  "author": "Renek78",
+  "page": "https://commons.wikimedia.org/wiki/File:Bukit_Bintang_junction_in_2024_2.jpg",
+  "article": "Kuala Lumpur",
+  "bytes": 351105
+ },
+ "hongkong": {
+  "kind": "places",
+  "file": "img/places/hongkong.jpg",
+  "title": "Hong_Kong_Island_Skyline_2009.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "WiNG",
+  "page": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Island_Skyline_2009.jpg",
+  "article": "Central, Hong Kong",
+  "bytes": 273909
+ },
+ "korea": {
+  "kind": "places",
+  "file": "img/places/korea.jpg",
+  "title": "중화전의_낮.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Eunmi Park",
+  "page": "https://commons.wikimedia.org/wiki/File:%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg",
+  "article": "Seoul",
+  "bytes": 372060
+ }
+}
