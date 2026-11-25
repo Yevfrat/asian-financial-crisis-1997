@@ -6,7 +6,16 @@
   var MONF = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var S = { k: null, t: 0, play: false, raf: 0, sim: null, regs: [], fx: null, flowI: 0, flowTimer: 0, cleanup: [] };
-  window.Dash = { mounted: false };
+  window.Dash = { mounted: false, scale: 1 };
+  /* дашборд рисуется в «виртуальном» кадре 1440×800 и масштабируется под окно */
+  function layout() {
+    var W = window.innerWidth, H = window.innerHeight - 54 - 60, s = Math.max(.4, Math.min(W / 1440, H / 800, 1.5));
+    var left = (W - 1440 * s) / 2, top = 54 + (H - 800 * s) / 2, root = $("#dash"), st = document.documentElement.style;
+    window.Dash.scale = s; root.style.left = left + "px"; root.style.top = top + "px"; root.style.transform = "scale(" + s + ")";
+    st.setProperty("--gl", (left + .395 * 1440 * s) + "px"); st.setProperty("--gt", top + "px");
+    st.setProperty("--gw", (.265 * 1440 * s) + "px"); st.setProperty("--gh", ((800 - 118) * s) + "px");
+  }
+  window.addEventListener("resize", function () { if (window.Dash.mounted) layout(); });
 
   function ym(s) { var p = s.split("-"); return (+p[0] - 1997) * 12 + (+p[1] - 6); }
   function mlab(i) { var m = (5 + i) % 12, y = 1997 + Math.floor((5 + i) / 12); return { s: MON[m] + " " + String(y).slice(2), f: MONF[m] + " " + y }; }
@@ -50,7 +59,7 @@
     var c = D.countries[k], U = window.AppUI, ph = U.photo(k);
     S.k = k; S.t = 0; S.play = false;
     S.ser = {}; D.order.forEach(function (o) { S.ser[o] = series(o); });
-    var root = $("#dash"); root.hidden = false;
+    var root = $("#dash"); root.hidden = false; layout();
     var h = "";
     // 1 Страна
     h += panel("country", c.name, '<div class="banner dbn">' + (ph ? '<img class="bimg" src="' + ph.file + '" alt="">' : "") + '<div class="bn-in"><h3>' + c.city + '</h3></div>' + U.cred(k) + '</div>' +
@@ -113,7 +122,7 @@
       var tip = $("#rgTip"); if (!tip) return;
       if (i < 0) { tip.hidden = true; return; }
       var box = $("#dash").getBoundingClientRect(); tip.hidden = false;
-      tip.style.left = (e.clientX - box.left + 14) + "px"; tip.style.top = (e.clientY - box.top + 14) + "px";
+      var sc = window.Dash.scale || 1; tip.style.left = ((e.clientX - box.left) / sc + 14) + "px"; tip.style.top = ((e.clientY - box.top) / sc + 14) + "px";
       tip.innerHTML = "<b>" + S.regs[i].n + "</b><br>" + pct(valAt(S.ser[S.k], S.t) * (1 - .45 * S.regs[i].d)) + " <small>(иллюстрация)</small>";
     };
     $("#gChips").addEventListener("click", function (e) { var b = e.target.closest(".chip"); if (!b) return; if (b.dataset.i === "f") window.AppUI.fin(); else window.AppUI.go(+b.dataset.i); });

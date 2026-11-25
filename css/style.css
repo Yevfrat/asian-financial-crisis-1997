@@ -214,7 +214,7 @@ summary{cursor:pointer;color:var(--c);font-weight:600}
 .mname{font-size:20px!important;line-height:1.25}
 
 /* ===== v4: дашборд вокруг карты (широкие экраны) ===== */
-#dash{position:fixed;left:0;right:0;top:54px;bottom:60px;z-index:6;pointer-events:none}
+#dash{position:fixed;left:0;top:54px;width:1440px;height:800px;transform-origin:0 0;z-index:6;pointer-events:none}
 #dash[hidden]{display:none}
 body.dash #panel{display:none}
 
@@ -310,7 +310,7 @@ body.dash #panel{display:none}
 #regionMap svg{overflow:hidden!important;border-radius:14px}
 
 /* ===== v5: глобус в центре, регионы на самом глобусе, все диаграммы видны ===== */
-body.dash #globeWrap,body.dash.mode-country #globeWrap{left:39.5%!important;top:54px!important;width:26.5%!important;height:calc(100% - 174px)!important;border:1.5px solid var(--c);border-radius:16px;box-shadow:0 0 24px rgba(0,229,255,.35);overflow:hidden;z-index:2;background:radial-gradient(circle at 50% 45%,#0b1440,#04050f 70%)}
+body.dash #globeWrap,body.dash.mode-country #globeWrap{left:var(--gl)!important;top:var(--gt)!important;width:var(--gw)!important;height:var(--gh)!important;border:1.5px solid var(--c);border-radius:16px;box-shadow:0 0 24px rgba(0,229,255,.35);overflow:hidden;z-index:2;background:radial-gradient(circle at 50% 45%,#0b1440,#04050f 70%)}
 body.dash #globeHud{display:none}
 .gTop{position:absolute;left:39.5%;width:26.5%;top:8px;z-index:8;display:flex;flex-direction:column;align-items:center;gap:6px;pointer-events:none}
 #gChips{display:flex;gap:6px;pointer-events:auto}

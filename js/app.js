@@ -251,7 +251,7 @@
   }
 
   /* ---------- переходы ---------- */
-  function wide() { return window.innerWidth >= 1000 && window.innerHeight >= 560; }
+  function wide() { return window.innerWidth >= 900 && window.innerHeight >= 420; }
   function goCountry(i, si) {
     if (i < 0 || i > 5) return;
     var fromCountry = st.mode === "country" || st.mode === "final", w = wide();
