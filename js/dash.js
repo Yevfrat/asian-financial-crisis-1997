@@ -9,11 +9,13 @@
   window.Dash = { mounted: false, scale: 1 };
   /* дашборд рисуется в «виртуальном» кадре 1440×800 и масштабируется под окно */
   function layout() {
-    var W = window.innerWidth, H = window.innerHeight - 54 - 60, s = Math.max(.4, Math.min(W / 1440, H / 800, 1.5));
-    var left = (W - 1440 * s) / 2, top = 54 + (H - 800 * s) / 2, root = $("#dash"), st = document.documentElement.style;
-    window.Dash.scale = s; root.style.left = left + "px"; root.style.top = top + "px"; root.style.transform = "scale(" + s + ")";
-    st.setProperty("--gl", (left + .395 * 1440 * s) + "px"); st.setProperty("--gt", top + "px");
-    st.setProperty("--gw", (.265 * 1440 * s) + "px"); st.setProperty("--gh", ((800 - 118) * s) + "px");
+    var W = window.innerWidth, H = window.innerHeight - 54 - 60;
+    var s = Math.max(.4, Math.min(H / 800, W / 1280, 1.6)), DW = W / s;
+    var top = 54 + (H - 800 * s) / 2, root = $("#dash"), st = document.documentElement.style;
+    window.Dash.scale = s; window.Dash.dw = DW;
+    root.style.width = DW + "px"; root.style.left = "0px"; root.style.top = top + "px"; root.style.transform = "scale(" + s + ")";
+    st.setProperty("--gl", (.365 * W) + "px"); st.setProperty("--gt", top + "px");
+    st.setProperty("--gw", (.295 * W) + "px"); st.setProperty("--gh", ((800 - 118) * s) + "px");
   }
   window.addEventListener("resize", function () { if (window.Dash.mounted) layout(); });
 
@@ -45,9 +47,9 @@
 
   /* ---------- панели ---------- */
   var RECTS = {
-    country: [1, 2, 25.5, 36, 1, 2, 48, 70], heroes: [1, 40, 25.5, 16, 1, 26, 58, 70], gdp: [1, 58, 25.5, 40, 1, 30, 60, 68],
-    time: [27.5, 2, 11.5, 25, 27.5, 2, 34, 42], events: [27.5, 29, 11.5, 69, 27.5, 12, 36, 86],
-    fx: [66, 2, 33, 22, 36, 2, 63, 56], sim: [66, 26, 33, 48, 36, 16, 63, 82], sol: [66, 76, 33, 22, 38, 30, 61, 68]
+    country: [1, 2, 22.5, 36, 1, 2, 46, 70], heroes: [1, 40, 22.5, 16, 1, 26, 56, 70], gdp: [1, 58, 22.5, 40, 1, 30, 58, 68],
+    time: [24.5, 2, 11, 25, 24.5, 2, 34, 42], events: [24.5, 29, 11, 69, 24.5, 12, 36, 86],
+    fx: [67, 2, 32, 22, 36, 2, 63, 56], sim: [67, 26, 32, 48, 36, 16, 63, 82], sol: [67, 76, 32, 22, 38, 30, 61, 68]
   };
   function panel(id, title, html) {
     var r = RECTS[id], st = "--l:" + r[0] + "%;--t:" + r[1] + "%;--w:" + r[2] + "%;--h:" + r[3] + "%;--el:" + r[4] + "%;--et:" + r[5] + "%;--ew:" + r[6] + "%;--eh:" + r[7] + "%";

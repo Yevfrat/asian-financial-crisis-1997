@@ -200,9 +200,9 @@
     R.forEach(function (g) { g.r.forEach(function (r) { for (var i = 0; i < r.length; i += 2) { x0 = Math.min(x0, r[i]); x1 = Math.max(x1, r[i]); y0 = Math.min(y0, r[i + 1]); y1 = Math.max(y1, r[i + 1]); } }); });
     var cx = (x0 + x1) / 2, cy = (y0 + y1) / 2, rad = Math.PI / 180;
     var w = (x1 - x0) * Math.cos(cy * rad) * rad, h = (y1 - y0) * rad;
-    var asp = (1440 * .265) / (800 - 118);
+    var asp = (.295 * (window.Dash && Dash.dw ? Dash.dw : 1600)) / (800 - 118);
     var th = Math.tan(22.5 * rad), tw = Math.tan(Math.atan(th * asp));
-    var d = 1 + Math.max(w * 1.5 / (2 * tw), h * 1.5 / (2 * th));
+    var d = 1 + Math.max(w * 1.75 / (2 * tw), h * 1.75 / (2 * th));
     d = Math.max(1.4, Math.min(d, 3.2));
     G.flyTo(k, function () { G.oc.enabled = true; if (done) done(); }, { lat: cy, lon: cx, r1: d });
   };
